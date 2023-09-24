@@ -1,11 +1,24 @@
 .App {
     --header_height: 60px;
+    display: flex;
+    justify-content: center;
 }
 
-.hw {
 
+.hw {
+    min-width: 1280px;
+    min-height: 720px;
+    color: #FFF;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hwTitle {
-
+    width: 165px;
+    height: 27px;
+    top: 131px;
+    left: 70px;
+    
 }
