@@ -21,7 +21,7 @@ export type AffairPriorityType = 'high' | 'middle' | 'low'
 export type AffairType = {
     _id: number 
     name: string 
-    priority: FilterType
+    priority: AffairPriorityType
 }
 export type FilterType = 'all' | AffairPriorityType
 
@@ -53,6 +53,7 @@ function HW2() {
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs: AffairType[] = filterAffairs(affairs, filter)
+
     const deleteAffairCallback = (_id: number) => { 
         setAffairs(deleteAffair(affairs, _id))
     }
