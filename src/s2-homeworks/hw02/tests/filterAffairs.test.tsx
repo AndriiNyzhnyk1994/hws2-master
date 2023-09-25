@@ -11,7 +11,7 @@ beforeEach(() => {
         { _id: 4, name: 'work', priority: 'high' },
         { _id: 5, name: 'html & css', priority: 'middle' },
     ]
-})
+}) 
 
 test('filter by all', () => {
     const newState = filterAffairs(initialState, 'all')
