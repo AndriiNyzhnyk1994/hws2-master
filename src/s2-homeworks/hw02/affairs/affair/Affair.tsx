@@ -23,9 +23,9 @@ function Affair(props: AffairPropsType) {
             className={affairClass}
         >
             <div id={'hw2-name-' + props.affair._id} className={nameClass}>
-                {props.affair.name}
+                 {props.affair.name}
             </div>
-            <div id={'hw2-priority-' + props.affair._id} hidden>
+            <div id={'hw2-priority-' + props.affair._id} >
                 {props.affair.priority}
             </div>
 
